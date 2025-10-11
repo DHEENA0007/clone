@@ -1,12 +1,12 @@
 import { Box, Typography, Stack, Container, Link } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import companyLogo from '../assets/companylogo.png';
 
 const FooterContainer = styled(Box)({
   background: '#1A1A2E',
@@ -34,9 +34,9 @@ export default function Footer() {
           {/* Logo & Tagline */}
           <Box sx={{ flex: 1 }}>
             <img 
-              src="https://images.unsplash.com/photo-1655704705321-3ac52dc67f70?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHw2fHxwdXp6bGUlMjBjb2xvcmZ1bCUyMGxvZ28lMjBidXNpbmVzcyUyMGJyYW5kaW5nfGVufDB8MHx8fDE3NjAwMzI3NTF8MA&ixlib=rb-4.1.0&q=85"
+              src={companyLogo}
               alt="Puzzle Diplomats Logo"
-              style={{ height: '50px', width: 'auto', marginBottom: '16px', filter: 'brightness(0) invert(1)', maxWidth: '100%' }}
+              style={{ height: '180px', width: 'auto', marginBottom: '16px', filter: 'brightness(0) invert(1)', maxWidth: '100%' }}
             />
             <Typography variant="body2" color="rgba(255, 255, 255, 0.7)">
               Empowering businesses through digital innovation and strategy.
@@ -66,33 +66,30 @@ export default function Footer() {
               <Stack direction="row" spacing={1} alignItems="center">
                 <LocationOnIcon sx={{ fontSize: 18, color: '#E31E24' }} />
                 <Typography variant="body2" color="rgba(255, 255, 255, 0.7)">
-                  Bangalore, Dubai
+                  Tamilnadu
                 </Typography>
               </Stack>
               <Stack direction="row" spacing={1} alignItems="center">
                 <PhoneIcon sx={{ fontSize: 18, color: '#E31E24' }} />
-                <FooterLink href="tel:+917094858696">
-                  +91 70948 58696
+                <FooterLink href="tel:+919080445315">
+                  +91 90804 45315
                 </FooterLink>
               </Stack>
               <Stack direction="row" spacing={1} alignItems="center">
                 <EmailIcon sx={{ fontSize: 18, color: '#E31E24' }} />
-                <FooterLink href="mailto:puzzle@diplomats.co.in">
-                  puzzle@diplomats.co.in
+                <FooterLink href="mailto:hello@akedumasters.com">
+                  hello@akedumasters.com
                 </FooterLink>
               </Stack>
               <Box sx={{ pt: 2 }}>
                 <Stack direction="row" spacing={1.5}>
-                  <FooterLink href="https://www.facebook.com/profile.php?id=61566677074509" target="_blank" sx={{ display: 'flex', alignItems: 'center' }}>
-                    <FacebookIcon />
-                  </FooterLink>
-                  <FooterLink href="https://www.instagram.com/puzzlediplomatsmarketing/" target="_blank" sx={{ display: 'flex', alignItems: 'center' }}>
+                  <FooterLink href="https://www.instagram.com/akodefyinfotech?igsh=MXJicThwaHhtdHh4Nw==" target="_blank" sx={{ display: 'flex', alignItems: 'center' }}>
                     <InstagramIcon />
                   </FooterLink>
-                  <FooterLink href="https://www.linkedin.com/in/puzzle-diplomats-digitalmarketing/" target="_blank" sx={{ display: 'flex', alignItems: 'center' }}>
+                  <FooterLink href="https://www.linkedin.com/company/ak-edumasters/" target="_blank" sx={{ display: 'flex', alignItems: 'center' }}>
                     <LinkedInIcon />
                   </FooterLink>
-                  <FooterLink href="https://wa.me/7094858696" target="_blank" sx={{ display: 'flex', alignItems: 'center' }}>
+                  <FooterLink href="https://wa.me/919080445315" target="_blank" sx={{ display: 'flex', alignItems: 'center' }}>
                     <WhatsAppIcon />
                   </FooterLink>
                 </Stack>

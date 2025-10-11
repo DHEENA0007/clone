@@ -7,7 +7,6 @@ import TrendingUpOutlinedIcon from '@mui/icons-material/TrendingUpOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import { useState } from 'react';
 import heroBgImage from '../assets/HeroBG.png';
@@ -85,7 +84,7 @@ const StyledButton = styled(Button)({
 
 const SocialSidebar = styled(Box)(({ theme }) => ({
   position: 'fixed',
-  right: 30,
+  right: 10,
   top: '50%',
   transform: 'translateY(-50%)',
   zIndex: 100,
@@ -114,7 +113,7 @@ const SocialIconButton = styled(IconButton)({
 const WhatsAppFab = styled(Fab)(({ theme }) => ({
   position: 'fixed',
   bottom: 30,
-  right: 30,
+  right: 10,
   zIndex: 100,
   background: '#25D366',
   color: '#FFFFFF',
@@ -160,7 +159,7 @@ export default function HeroSection() {
                   src={companyLogo}
                   alt="Puzzle Diplomats Logo"
                   style={{ 
-                    height: '100px', 
+                    height: '180px', 
                     width: 'auto',
                     maxWidth: '280px',
                     objectFit: 'contain',
@@ -345,7 +344,7 @@ export default function HeroSection() {
       <SocialSidebar sx={{ display: { xs: 'none', md: 'flex' } }}>
         <SocialIconButton 
           component="a"
-          href="https://www.linkedin.com/in/puzzle-diplomats-digitalmarketing/" 
+          href="https://www.linkedin.com/company/ak-edumasters/" 
           target="_blank"
           aria-label="LinkedIn"
         >
@@ -353,21 +352,12 @@ export default function HeroSection() {
         </SocialIconButton>
         <SocialIconButton 
           component="a"
-          href="https://www.instagram.com/puzzlediplomatsmarketing/" 
+          href="https://www.instagram.com/akodefyinfotech?igsh=MXJicThwaHhtdHh4Nw==" 
           target="_blank"
           aria-label="Instagram"
         >
           <InstagramIcon fontSize="small" />
         </SocialIconButton>
-        <SocialIconButton 
-          component="a"
-          href="https://www.facebook.com/profile.php?id=61566677074509" 
-          target="_blank"
-          aria-label="Facebook"
-        >
-          <FacebookIcon fontSize="small" />
-        </SocialIconButton>
-        <Box sx={{ width: 1, height: 30, background: '#E0E0E0', my: 1 }} />
         <Typography 
           variant="caption" 
           sx={{ 
@@ -376,6 +366,7 @@ export default function HeroSection() {
             color: '#757575',
             fontWeight: 600,
             fontSize: '0.7rem',
+            mt: 1,
           }}
         >
           Follow Us
@@ -385,7 +376,7 @@ export default function HeroSection() {
       {/* WhatsApp Floating Button */}
       <WhatsAppFab 
         component="a"
-        href="https://wa.me/7094858696" 
+        href="https://wa.me/919080445315" 
         target="_blank"
         aria-label="Chat on WhatsApp"
       >

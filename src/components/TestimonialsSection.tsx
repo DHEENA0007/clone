@@ -1,32 +1,29 @@
-import { Box, Typography, Container } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { useEffect, useRef, useState } from 'react';
 
-const LogoImage = styled('img')<{ isVisible?: boolean; delay?: number; maxwidth?: string; maxheight?: string }>(({ isVisible, delay, maxwidth, maxheight }) => ({
-  width: 'auto',
-  height: 'auto',
-  maxWidth: maxwidth || '450px',
-  maxHeight: maxheight || '320px',
+const LogoImage = styled('img')<{ isVisible?: boolean; delay?: number }>(({ isVisible, delay }) => ({
+  width: '200px',
+  height: '140px',
   objectFit: 'contain',
-  imageRendering: 'crisp-edges',
   opacity: isVisible ? 1 : 0,
   transform: isVisible ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.9)',
   transition: `all 0.6s ease ${delay || 0}ms`,
   cursor: 'pointer',
   '&:hover': {
-    transform: isVisible ? 'scale(1.2)' : 'translateY(30px) scale(0.9)',
+    transform: isVisible ? 'scale(1.1)' : 'translateY(30px) scale(0.9)',
   },
 }));
 
 const clientLogos = [
-  { name: 'Client 1', image: '/1.png', maxWidth: '340px', maxHeight: '240px' },
-  { name: 'Client 2', image: '/2.png', maxWidth: '460px', maxHeight: '340px' },
-  { name: 'Client 3', image: '/3.png', maxWidth: '500px', maxHeight: '360px' },
-  { name: 'Client 4', image: '/4.png', maxWidth: '420px', maxHeight: '300px' },
-  { name: 'Client 5', image: '/5.png', maxWidth: '380px', maxHeight: '260px' },
-  { name: 'Client 6', image: '/6.png', maxWidth: '480px', maxHeight: '340px' },
-  { name: 'Client 7', image: '/7.png', maxWidth: '430px', maxHeight: '310px' },
-  { name: 'Client 8', image: '/8.png', maxWidth: '430px', maxHeight: '310px' },
+  { name: 'Client 1', image: `${import.meta.env.BASE_URL}1.png` },
+  { name: 'Client 2', image: `${import.meta.env.BASE_URL}2.png` },
+  { name: 'Client 3', image: `${import.meta.env.BASE_URL}3.png` },
+  { name: 'Client 4', image: `${import.meta.env.BASE_URL}4.png` },
+  { name: 'Client 5', image: `${import.meta.env.BASE_URL}5.png` },
+  { name: 'Client 6', image: `${import.meta.env.BASE_URL}6.png` },
+  { name: 'Client 7', image: `${import.meta.env.BASE_URL}7.png` },
+  { name: 'Client 8', image: `${import.meta.env.BASE_URL}8.png` },
 ];
 
 export default function TestimonialsSection() {
@@ -62,35 +59,33 @@ export default function TestimonialsSection() {
   }, []);
 
   return (
-    <Box ref={sectionRef} sx={{ py: 12, background: '#FFFFFF' }}>
-      <Container maxWidth="lg">
-        <Typography variant="h2" align="center" sx={{ mb: 8 }}>
-          Our Clients Speak for Us:
-        </Typography>
+    <Box ref={sectionRef} sx={{ py: 12, background: '#FFFFFF', px: { xs: 2, sm: 4, md: 6 } }}>
+      <Typography variant="h2" align="center" sx={{ mb: 8 }}>
+        Our Clients Speak for Us:
+      </Typography>
 
-        <Box 
-          sx={{ 
-            display: 'grid',
-            gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)', lg: 'repeat(4, 1fr)' },
-            gap: 4,
-            mb: 10,
-            alignItems: 'center',
-            justifyItems: 'center',
-          }}
-        >
-          {clientLogos.map((client, index) => (
-            <LogoImage 
-              key={index}
-              src={client.image}
-              alt={client.name}
-              isVisible={isVisible}
-              delay={index * 100}
-              maxwidth={client.maxWidth}
-              maxheight={client.maxHeight}
-            />
-          ))}
-        </Box>
-      </Container>
+      <Box 
+        sx={{ 
+          display: 'grid',
+          gridTemplateColumns: { xs: 'repeat(2, 1fr)', sm: 'repeat(3, 1fr)', md: 'repeat(4, 1fr)' },
+          gap: { xs: 3, sm: 4, md: 6 },
+          mb: 10,
+          alignItems: 'center',
+          justifyItems: 'center',
+          maxWidth: '1200px',
+          mx: 'auto',
+        }}
+      >
+        {clientLogos.map((client, index) => (
+          <LogoImage 
+            key={index}
+            src={client.image}
+            alt={client.name}
+            isVisible={isVisible}
+            delay={index * 100}
+          />
+        ))}
+      </Box>
     </Box>
   );
 }
