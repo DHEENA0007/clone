@@ -11,6 +11,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import { useState } from 'react';
 import heroBgImage from '../assets/HeroBG.png';
+import companyLogo from '../assets/companylogo.png';
 import { sendEmail, type ContactFormData } from '../utils/emailService';
 
 const HeroContainer = styled(Box)(({ theme }) => ({
@@ -156,7 +157,7 @@ export default function HeroSection() {
               {/* Logo */}
               <Box sx={{ mb: 6 }}>
                 <img 
-                  src="/companylogo.jpg"
+                  src={companyLogo}
                   alt="Puzzle Diplomats Logo"
                   style={{ 
                     height: '100px', 
