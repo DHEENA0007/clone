@@ -54,6 +54,17 @@ const ConsultationCard = styled(Box)(({ theme }) => ({
   position: 'relative',
   zIndex: 10,
   maxWidth: '420px',
+  animation: 'slideInUp 0.8s ease-out',
+  '@keyframes slideInUp': {
+    '0%': {
+      opacity: 0,
+      transform: 'translateY(50px)',
+    },
+    '100%': {
+      opacity: 1,
+      transform: 'translateY(0)',
+    },
+  },
   [theme.breakpoints.down('md')]: {
     maxWidth: '100%',
     padding: theme.spacing(3),
@@ -220,6 +231,28 @@ export default function HeroSection() {
               </Stack>
             </Box>
 
+            {/* Professional Person Image - Mobile Only */}
+            <Box 
+              sx={{ 
+                display: { xs: 'block', md: 'none' },
+                textAlign: 'center',
+                mb: 3,
+              }}
+            >
+              <img 
+                src={heroImage}
+                alt="Professional business consultant"
+                style={{
+                  width: '100%',
+                  maxWidth: '300px',
+                  height: 'auto',
+                  objectFit: 'contain',
+                  mixBlendMode: 'multiply',
+                  filter: 'contrast(1.1) brightness(1.05)',
+                }}
+              />
+            </Box>
+
             {/* Right Content - Form and Image */}
             <Stack 
               direction="row" 
@@ -230,7 +263,7 @@ export default function HeroSection() {
                 justifyContent: 'flex-end',
               }}
             >
-              {/* Professional Person Image */}
+              {/* Professional Person Image - Desktop Only */}
               <Box 
                 sx={{ 
                   display: { xs: 'none', md: 'block' },
