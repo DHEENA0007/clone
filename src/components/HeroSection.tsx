@@ -8,7 +8,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import VerifiedIcon from '@mui/icons-material/Verified';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import heroBgImage from '../assets/HeroBG.png';
 import companyLogo from '../assets/companylogo.png';
 import heroImage from '../assets/Hero.png';
@@ -46,7 +46,7 @@ const HeroContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-const ConsultationCard = styled(Box)(({ theme }) => ({
+const ConsultationCard = styled(Box)<{ isVisible?: boolean }>(({ theme, isVisible }) => ({
   background: '#FFFFFF',
   borderRadius: '20px',
   padding: theme.spacing(4),
@@ -54,17 +54,9 @@ const ConsultationCard = styled(Box)(({ theme }) => ({
   position: 'relative',
   zIndex: 10,
   maxWidth: '420px',
-  animation: 'slideInUp 0.8s ease-out',
-  '@keyframes slideInUp': {
-    '0%': {
-      opacity: 0,
-      transform: 'translateY(50px)',
-    },
-    '100%': {
-      opacity: 1,
-      transform: 'translateY(0)',
-    },
-  },
+  opacity: isVisible ? 1 : 0,
+  transform: isVisible ? 'translateX(0)' : 'translateX(100px)',
+  transition: 'all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)',
   [theme.breakpoints.down('md')]: {
     maxWidth: '100%',
     padding: theme.spacing(3),
@@ -154,6 +146,8 @@ export default function HeroSection() {
     service: '',
     timeline: '',
   });
+  const [isCardVisible, setIsCardVisible] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
 
   const handleInputChange = (field: keyof ContactFormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -162,6 +156,34 @@ export default function HeroSection() {
   const handleSubmit = () => {
     sendEmail(formData, 'Request Callback');
   };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsCardVisible(true);
+          } else {
+            setIsCardVisible(false);
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: '0px',
+      }
+    );
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
 
   return (
     <>
@@ -286,7 +308,7 @@ export default function HeroSection() {
               </Box>
               
               {/* Consultation Form Card */}
-              <ConsultationCard>
+              <ConsultationCard ref={cardRef} isVisible={isCardVisible}>
                 <Typography 
                   variant="h5" 
                   sx={{ 
