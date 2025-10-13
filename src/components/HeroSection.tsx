@@ -11,6 +11,7 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 import { useState } from 'react';
 import heroBgImage from '../assets/HeroBG.png';
 import companyLogo from '../assets/companylogo.png';
+import heroImage from '../assets/Hero.png';
 import { sendEmail, type ContactFormData } from '../utils/emailService';
 
 const HeroContainer = styled(Box)(({ theme }) => ({
@@ -63,11 +64,16 @@ const ConsultationCard = styled(Box)(({ theme }) => ({
   },
 }));
 
-const ValuePropItem = styled(Stack)({
+const ValuePropItem = styled(Stack)(({ theme }) => ({
   alignItems: 'center',
   textAlign: 'center',
   gap: '12px',
-});
+  [theme.breakpoints.down('sm')]: {
+    flexDirection: 'row',
+    textAlign: 'left',
+    gap: '16px',
+  },
+}));
 
 const StyledButton = styled(Button)({
   background: '#000000',
@@ -187,23 +193,26 @@ export default function HeroSection() {
               <Stack 
                 direction={{ xs: 'column', sm: 'row' }} 
                 spacing={{ xs: 3, sm: 4 }} 
-                sx={{ mb: 4 }}
+                sx={{ 
+                  mb: 4,
+                  alignItems: { xs: 'flex-start', sm: 'center' }
+                }}
               >
                 <ValuePropItem>
-                  <PublicOutlinedIcon sx={{ fontSize: 64, color: '#E31E24' }} />
-                  <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: '1.05rem' }}>
+                  <PublicOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#E31E24', flexShrink: 0 }} />
+                  <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
                     Digital Marketing<br />Team
                   </Typography>
                 </ValuePropItem>
                 <ValuePropItem>
-                  <PsychologyOutlinedIcon sx={{ fontSize: 64, color: '#E31E24' }} />
-                  <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: '1.05rem' }}>
+                  <PsychologyOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#E31E24', flexShrink: 0 }} />
+                  <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
                     AI-Powered Content<br />& Paid Campaigns
                   </Typography>
                 </ValuePropItem>
                 <ValuePropItem>
-                  <TrendingUpOutlinedIcon sx={{ fontSize: 64, color: '#E31E24' }} />
-                  <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: '1.05rem' }}>
+                  <TrendingUpOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#E31E24', flexShrink: 0 }} />
+                  <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
                     Proven ROI-Driven<br />Strategies
                   </Typography>
                 </ValuePropItem>
@@ -211,7 +220,37 @@ export default function HeroSection() {
             </Box>
 
             {/* Right Content - Form and Image */}
-            <Box sx={{ position: 'relative', width: { xs: '100%', lg: 'auto' }, display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end' }}>
+            <Stack 
+              direction="row" 
+              spacing={3} 
+              alignItems="flex-end" 
+              sx={{ 
+                width: { xs: '100%', lg: 'auto' },
+                justifyContent: 'flex-end',
+              }}
+            >
+              {/* Professional Person Image */}
+              <Box 
+                sx={{ 
+                  display: { xs: 'none', md: 'block' },
+                  alignSelf: 'stretch',
+                  transform: 'translateY(-50px)',
+                }}
+              >
+                <img 
+                  src={heroImage}
+                  alt="Professional business consultant"
+                  style={{
+                    height: '100%',
+                    width: 'auto',
+                    maxWidth: '550px',
+                    objectFit: 'contain',
+                    mixBlendMode: 'multiply',
+                    filter: 'contrast(1.1) brightness(1.05)',
+                  }}
+                />
+              </Box>
+              
               {/* Consultation Form Card */}
               <ConsultationCard>
                 <Typography 
@@ -335,7 +374,7 @@ export default function HeroSection() {
                   />
                 </Box>
               </ConsultationCard>
-            </Box>
+            </Stack>
           </Stack>
         </Box>
       </HeroContainer>

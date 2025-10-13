@@ -4,7 +4,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import { useEffect, useRef, useState } from 'react';
 import { sendEmail } from '../utils/emailService';
 
-const PricingCard = styled(Card)<{ isVisible?: boolean; delay?: number }>(({ isVisible, delay }) => ({
+const PricingCard = styled(Card)<{ isVisible?: boolean; delay?: number }>(({ theme, isVisible, delay }) => ({
   height: '100%',
   border: '2px solid #E0E0E0',
   borderRadius: '16px',
@@ -15,6 +15,11 @@ const PricingCard = styled(Card)<{ isVisible?: boolean; delay?: number }>(({ isV
     transform: isVisible ? 'translateY(-12px) scale(1.02)' : 'scale(0.9)',
     boxShadow: '0 20px 60px rgba(227, 30, 36, 0.2)',
     borderColor: '#E31E24',
+  },
+  [theme.breakpoints.down('sm')]: {
+    '&:hover': {
+      transform: isVisible ? 'translateY(-6px) scale(1.01)' : 'scale(0.9)',
+    },
   },
 }));
 
@@ -115,7 +120,7 @@ export default function PricingSection() {
           {packages.map((pkg, index) => (
             <Box key={index} sx={{ flex: 1 }}>
               <PricingCard isVisible={isVisible} delay={index * 200}>
-                <CardContent sx={{ p: 4 }}>
+                <CardContent sx={{ p: { xs: 3, sm: 4 } }}>
                   <Typography variant="h4" sx={{ mb: 1, fontWeight: 700 }}>
                     {pkg.name}
                   </Typography>

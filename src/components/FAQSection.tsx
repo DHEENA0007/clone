@@ -84,13 +84,13 @@ export default function FAQSection() {
   }, []);
 
   return (
-    <Box ref={sectionRef} sx={{ py: 12, background: '#FFFFFF' }}>
+    <Box ref={sectionRef} sx={{ py: { xs: 8, md: 12 }, background: '#FFFFFF' }}>
       <Container maxWidth="md">
-        <Typography variant="h2" align="center" sx={{ mb: 6 }}>
+        <Typography variant="h2" align="center" sx={{ mb: { xs: 4, md: 6 } }}>
           Frequently Asked Questions (FAQs)
         </Typography>
 
-        <Box sx={{ mb: 4 }}>
+        <Box sx={{ mb: { xs: 3, md: 4 } }}>
           {faqs.map((faq, index) => (
             <AnimatedAccordion 
               key={index}

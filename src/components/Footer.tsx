@@ -82,7 +82,14 @@ export default function Footer() {
                 </FooterLink>
               </Stack>
               <Box sx={{ pt: 2 }}>
-                <Stack direction="row" spacing={1.5}>
+                <Stack 
+                  direction="row" 
+                  spacing={1.5}
+                  sx={{ 
+                    flexWrap: 'nowrap',
+                    justifyContent: { xs: 'flex-start', md: 'flex-start' }
+                  }}
+                >
                   <FooterLink href="https://www.instagram.com/akodefyinfotech?igsh=MXJicThwaHhtdHh4Nw==" target="_blank" sx={{ display: 'flex', alignItems: 'center' }}>
                     <InstagramIcon />
                   </FooterLink>

@@ -154,7 +154,7 @@ export default function ConsultationBanner() {
           </StyledButton>
           
           {/* Trust indicators */}
-          <Box sx={{ mt: 4, display: 'flex', justifyContent: 'center', gap: { xs: 2, sm: 4 }, flexWrap: 'wrap' }}>
+          <Box sx={{ mt: 4, display: 'flex', justifyContent: 'center', gap: { xs: 3, sm: 4 }, flexWrap: 'wrap', px: { xs: 2, sm: 0 } }}>
             <Box sx={{ textAlign: 'center' }}>
               <Typography variant="h4" sx={{ fontWeight: 700, color: '#E31E24', mb: 0.5 }}>
                 100+

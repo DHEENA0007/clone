@@ -28,7 +28,7 @@ const IndustryCard = styled(Box)<{ isVisible?: boolean; delay?: number }>(({ the
   },
 }));
 
-const IconCircle = styled(Box)({
+const IconCircle = styled(Box)(({ theme }) => ({
   width: 80,
   height: 80,
   borderRadius: '50%',
@@ -37,7 +37,11 @@ const IconCircle = styled(Box)({
   alignItems: 'center',
   justifyContent: 'center',
   boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-});
+  [theme.breakpoints.down('sm')]: {
+    width: 64,
+    height: 64,
+  },
+}));
 
 const industries = [
   { icon: StorefrontIcon, name: 'E-Commerce & Retail' },
@@ -104,8 +108,8 @@ export default function IndustriesSection() {
           sx={{ 
             display: 'grid',
             gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' },
-            gap: 4,
-            mb: 6,
+            gap: { xs: 3, sm: 4 },
+            mb: { xs: 4, md: 6 },
           }}
         >
           {industries.map((industry, index) => {
@@ -113,9 +117,9 @@ export default function IndustriesSection() {
             return (
               <IndustryCard key={index} isVisible={isVisible} delay={index * 120}>
                 <IconCircle>
-                  <IconComponent sx={{ fontSize: 40, color: '#E31E24' }} />
+                  <IconComponent sx={{ fontSize: { xs: 32, sm: 40 }, color: '#E31E24' }} />
                 </IconCircle>
-                <Typography variant="h6" fontWeight={600}>
+                <Typography variant="h6" fontWeight={600} sx={{ fontSize: { xs: '0.95rem', sm: '1.1rem' } }}>
                   {industry.name}
                 </Typography>
               </IndustryCard>

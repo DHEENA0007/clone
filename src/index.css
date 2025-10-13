@@ -43,26 +43,19 @@ html {
     padding-right: 16px !important;
   }
 
-  /* Stack elements vertically */
-  .MuiStack-root {
-    flex-direction: column !important;
-  }
+  /* Note: Removed overly aggressive Stack forcing - components handle their own responsive direction */
 
   /* Adjust grid layouts */
   .MuiGrid-container {
     margin: 0 !important;
   }
 
-  /* Full width buttons on mobile */
+  /* Adjust button sizing on mobile - but don't force full width */
   .MuiButton-root {
-    width: 100%;
     font-size: 0.9rem;
   }
 
-  /* Reduce spacing */
-  .MuiBox-root {
-    padding: 16px !important;
-  }
+  /* Note: Removed overly aggressive Box padding - components handle their own spacing */
 
   /* Typography adjustments */
   h1 {

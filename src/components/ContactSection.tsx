@@ -50,7 +50,7 @@ export default function ContactSection() {
         <Typography variant="h2" align="center" sx={{ mb: 3, color: '#FFFFFF' }}>
           Ready to Elevate Your Digital Presence?
         </Typography>
-        <Stack direction={{ xs: 'column', md: 'row' }} spacing={6} alignItems="flex-start">
+        <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 4, md: 6 }} alignItems="flex-start">
           {/* Left - Description */}
           <Box sx={{ flex: 1 }}>
             <Typography variant="overline" sx={{ color: '#E31E24', fontWeight: 700, letterSpacing: 2, mb: 2, display: 'block' }}>
@@ -70,7 +70,7 @@ export default function ContactSection() {
 
           {/* Right - Form */}
           <Box sx={{ flex: 1, width: '100%' }}>
-            <Box sx={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)', borderRadius: '16px', p: 4 }}>
+            <Box sx={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)', borderRadius: '16px', p: { xs: 3, sm: 4 } }}>
               <Stack spacing={3}>
                 <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
                   <TextField

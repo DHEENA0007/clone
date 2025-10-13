@@ -76,7 +76,7 @@ export default function ServicesSection() {
   return (
     <Box ref={sectionRef} sx={{ py: 12, background: '#FFFFFF' }}>
       <Container maxWidth="lg">
-        <Stack direction={{ xs: 'column', md: 'row' }} spacing={6} alignItems="flex-start">
+        <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 4, md: 6 }} alignItems="flex-start">
           {/* Left - Content */}
           <Box sx={{ flex: 1 }}>
             <Box sx={{ mb: 4, display: { xs: 'none', md: 'block' } }}>
@@ -100,7 +100,7 @@ export default function ServicesSection() {
               sx={{ 
                 display: 'grid',
                 gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' },
-                gap: 3,
+                gap: { xs: 2, sm: 3 },
               }}
             >
               {services.map((service, index) => {

@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { useEffect, useRef, useState } from 'react';
 
-const LogoImage = styled('img')<{ isVisible?: boolean; delay?: number }>(({ isVisible, delay }) => ({
+const LogoImage = styled('img')<{ isVisible?: boolean; delay?: number }>(({ theme, isVisible, delay }) => ({
   width: '200px',
   height: '140px',
   objectFit: 'contain',
@@ -12,6 +12,10 @@ const LogoImage = styled('img')<{ isVisible?: boolean; delay?: number }>(({ isVi
   cursor: 'pointer',
   '&:hover': {
     transform: isVisible ? 'scale(1.1)' : 'translateY(30px) scale(0.9)',
+  },
+  [theme.breakpoints.down('sm')]: {
+    width: '140px',
+    height: '100px',
   },
 }));
 
@@ -68,8 +72,8 @@ export default function TestimonialsSection() {
         sx={{ 
           display: 'grid',
           gridTemplateColumns: { xs: 'repeat(2, 1fr)', sm: 'repeat(3, 1fr)', md: 'repeat(4, 1fr)' },
-          gap: { xs: 3, sm: 4, md: 6 },
-          mb: 10,
+          gap: { xs: 2, sm: 4, md: 6 },
+          mb: { xs: 6, md: 10 },
           alignItems: 'center',
           justifyItems: 'center',
           maxWidth: '1200px',
