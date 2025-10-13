@@ -155,19 +155,20 @@ export default function HeroSection() {
   return (
     <>
       <HeroContainer>
-        <Box sx={{ position: 'relative', zIndex: 5, width: '100%', px: { xs: 3, md: 6, lg: 8 }, py: { xs: 6, md: 8 } }}>
+        <Box sx={{ position: 'relative', zIndex: 5, width: '100%', px: { xs: 2, sm: 3, md: 6, lg: 8 }, py: { xs: 3, sm: 4, md: 8 } }}>
           <Stack direction={{ xs: 'column', lg: 'row' }} spacing={{ xs: 4, lg: 6 }} alignItems="center" justifyContent="space-between">
             {/* Left Content */}
             <Box sx={{ flex: 1, maxWidth: { xs: '100%', lg: '650px' } }}>
               {/* Logo */}
-              <Box sx={{ mb: 6 }}>
+              <Box sx={{ mb: { xs: 3, md: 6 } }}>
                 <img 
                   src={companyLogo}
                   alt="Puzzle Diplomats Logo"
                   style={{ 
-                    height: '180px', 
-                    width: 'auto',
+                    height: 'auto', 
+                    width: '100%',
                     maxWidth: '280px',
+                    maxHeight: '120px',
                     objectFit: 'contain',
                     mixBlendMode: 'multiply',
                     filter: 'contrast(1.1) brightness(1.05)',
@@ -178,9 +179,9 @@ export default function HeroSection() {
               <Typography 
                 variant="h1" 
                 sx={{ 
-                  mb: 6, 
+                  mb: { xs: 3, md: 6 }, 
                   color: '#000000', 
-                  fontSize: { xs: '2.5rem', md: '3.5rem', lg: '4.2rem' },
+                  fontSize: { xs: '1.75rem', sm: '2.5rem', md: '3.5rem', lg: '4.2rem' },
                   fontWeight: 700,
                   lineHeight: 1.15,
                   letterSpacing: '-0.02em',
@@ -192,9 +193,9 @@ export default function HeroSection() {
               {/* Value Props */}
               <Stack 
                 direction={{ xs: 'column', sm: 'row' }} 
-                spacing={{ xs: 3, sm: 4 }} 
+                spacing={{ xs: 2, sm: 4 }} 
                 sx={{ 
-                  mb: 4,
+                  mb: { xs: 3, md: 4 },
                   alignItems: { xs: 'flex-start', sm: 'center' }
                 }}
               >
@@ -256,17 +257,17 @@ export default function HeroSection() {
                 <Typography 
                   variant="h5" 
                   sx={{ 
-                    mb: 3, 
+                    mb: { xs: 2, md: 3 }, 
                     textAlign: 'center', 
                     fontWeight: 700,
-                    fontSize: { xs: '1.15rem', md: '1.3rem' },
+                    fontSize: { xs: '1rem', sm: '1.15rem', md: '1.3rem' },
                     lineHeight: 1.4,
                   }}
                 >
                   Get a FREE Digital Consultation with Puzzle Diplomats in <Box component="span" sx={{ color: '#E31E24' }}>5 Minutes!</Box>
                 </Typography>
 
-                <Stack spacing={2.5}>
+                <Stack spacing={{ xs: 2, md: 2.5 }}>
                   <TextField
                     fullWidth
                     placeholder="Full Name *"
@@ -331,6 +332,10 @@ export default function HeroSection() {
                     fullWidth 
                     size="large"
                     onClick={handleSubmit}
+                    sx={{
+                      fontSize: { xs: '0.9rem', md: '1rem' },
+                      padding: { xs: '12px 20px', md: '16px 24px' },
+                    }}
                   >
                     Request a Call Back
                   </StyledButton>
@@ -341,8 +346,8 @@ export default function HeroSection() {
                   direction="row" 
                   alignItems="center" 
                   justifyContent="center" 
-                  spacing={1.5} 
-                  sx={{ mt: 3 }}
+                  spacing={{ xs: 1, md: 1.5 }} 
+                  sx={{ mt: { xs: 2, md: 3 }, flexWrap: 'wrap' }}
                 >
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
                     <img 
@@ -366,7 +371,7 @@ export default function HeroSection() {
                 </Stack>
 
                 {/* Footer Note Image */}
-                <Box sx={{ mt: 3, textAlign: 'center' }}>
+                <Box sx={{ mt: { xs: 2, md: 3 }, textAlign: 'center' }}>
                   <img 
                     src="https://alahmaradv.com/wp-content/uploads/2024/02/form-footer-white.webp"
                     alt="Puzzle Diplomats - Trusted Partners"

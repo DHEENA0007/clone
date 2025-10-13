@@ -107,8 +107,8 @@ export default function IndustriesSection() {
         <Box 
           sx={{ 
             display: 'grid',
-            gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' },
-            gap: { xs: 3, sm: 4 },
+            gridTemplateColumns: { xs: 'repeat(2, 1fr)', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' },
+            gap: { xs: 2.5, sm: 4 },
             mb: { xs: 4, md: 6 },
           }}
         >
