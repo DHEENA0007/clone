@@ -32,7 +32,7 @@ const IconCircle = styled(Box)(({ theme }) => ({
   width: 80,
   height: 80,
   borderRadius: '50%',
-  background: '#FFF8F0',
+  background: 'var(--mui-palette-background-paper)',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -92,7 +92,7 @@ export default function IndustriesSection() {
   }, []);
 
   return (
-    <Box ref={sectionRef} sx={{ py: 12, background: '#D4C4B0' }}>
+    <Box ref={sectionRef} sx={{ py: 12, background: 'grey.100' }}>
       <Container maxWidth="lg">
         <Typography variant="overline" align="center" sx={{ display: 'block', mb: 2, fontWeight: 700, letterSpacing: 2 }}>
           INDUSTRY SPECIALIZATION
@@ -117,7 +117,7 @@ export default function IndustriesSection() {
             return (
               <IndustryCard key={index} isVisible={isVisible} delay={index * 120}>
                 <IconCircle>
-                  <IconComponent sx={{ fontSize: { xs: 32, sm: 40 }, color: '#E31E24' }} />
+                  <IconComponent sx={{ fontSize: { xs: 32, sm: 40 }, color: 'primary.main' }} />
                 </IconCircle>
                 <Typography variant="h6" fontWeight={600} sx={{ fontSize: { xs: '0.95rem', sm: '1.1rem' } }}>
                   {industry.name}
@@ -135,9 +135,9 @@ export default function IndustriesSection() {
             sx={{ 
               px: 4,
               py: 1.5,
-              background: '#1A1A2E',
+              background: 'grey.900',
               '&:hover': {
-                background: '#0F0F1A',
+                background: 'grey.800',
               },
             }}
           >

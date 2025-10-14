@@ -18,7 +18,7 @@ const FooterLink = styled(Link)({
   textDecoration: 'none',
   transition: 'color 0.3s ease',
   '&:hover': {
-    color: '#E31E24',
+    color: '#0D9F4F',
   },
 });
 
@@ -64,19 +64,19 @@ export default function Footer() {
             </Typography>
             <Stack spacing={1.5}>
               <Stack direction="row" spacing={1} alignItems="center">
-                <LocationOnIcon sx={{ fontSize: 18, color: '#E31E24' }} />
+                <LocationOnIcon sx={{ fontSize: 18, color: '#0D9F4F' }} />
                 <Typography variant="body2" color="rgba(255, 255, 255, 0.7)">
                   Tamilnadu
                 </Typography>
               </Stack>
               <Stack direction="row" spacing={1} alignItems="center">
-                <PhoneIcon sx={{ fontSize: 18, color: '#E31E24' }} />
+                <PhoneIcon sx={{ fontSize: 18, color: '#0D9F4F' }} />
                 <FooterLink href="tel:+919080445315">
                   +91 90804 45315
                 </FooterLink>
               </Stack>
               <Stack direction="row" spacing={1} alignItems="center">
-                <EmailIcon sx={{ fontSize: 18, color: '#E31E24' }} />
+                <EmailIcon sx={{ fontSize: 18, color: '#0D9F4F' }} />
                 <FooterLink href="mailto:hello@akedumasters.com">
                   hello@akedumasters.com
                 </FooterLink>

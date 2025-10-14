@@ -74,7 +74,7 @@ export default function ServicesSection() {
   }, []);
 
   return (
-    <Box ref={sectionRef} sx={{ py: 12, background: '#FFFBF5' }}>
+    <Box ref={sectionRef} sx={{ py: 12, background: 'background.default' }}>
       <Container maxWidth="lg">
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 4, md: 6 }} alignItems="flex-start">
           {/* Left - Content */}
@@ -112,7 +112,7 @@ export default function ServicesSection() {
                     delay={index * 150}
                   >
                     <Box sx={{ textAlign: 'center', mb: 2 }}>
-                      <IconComponent sx={{ fontSize: 48, color: '#E31E24', mb: 2 }} />
+                      <IconComponent sx={{ fontSize: 48, color: 'primary.main', mb: 2 }} />
                     </Box>
                     <Typography variant="h6" sx={{ mb: 1.5, fontWeight: 700, textAlign: 'center' }}>
                       {service.title}

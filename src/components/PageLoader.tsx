@@ -9,7 +9,7 @@ const LoaderContainer = styled(Box)({
   left: 0,
   right: 0,
   bottom: 0,
-  background: '#FFFBF5',
+  background: 'var(--mui-palette-background-default)',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -28,7 +28,7 @@ const Circle = styled(Box)({
   left: '50%',
   transform: 'translate(-50%, -50%)',
   borderRadius: '50%',
-  border: '3px solid #E31E24',
+  border: '3px solid var(--mui-palette-primary-main)',
 });
 
 export default function PageLoader({ onComplete }: { onComplete: () => void }) {

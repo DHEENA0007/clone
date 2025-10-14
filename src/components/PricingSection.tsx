@@ -14,7 +14,7 @@ const PricingCard = styled(Card)<{ isVisible?: boolean; delay?: number }>(({ the
   '&:hover': {
     transform: isVisible ? 'translateY(-12px) scale(1.02)' : 'scale(0.9)',
     boxShadow: '0 20px 60px rgba(227, 30, 36, 0.2)',
-    borderColor: '#E31E24',
+    borderColor: '#0D9F4F',
   },
   [theme.breakpoints.down('sm')]: {
     '&:hover': {
@@ -106,7 +106,7 @@ export default function PricingSection() {
   }, []);
 
   return (
-    <Box ref={sectionRef} sx={{ py: 12, background: '#FFF8F0' }}>
+    <Box ref={sectionRef} sx={{ py: 12, background: 'grey.50' }}>
       <Container maxWidth="lg">
         <Typography variant="h2" align="center" sx={{ mb: 6 }}>
           Choose Your Perfect Growth Package
@@ -147,7 +147,7 @@ export default function PricingSection() {
                   <Stack spacing={2} sx={{ mb: 4 }}>
                     {pkg.features.map((feature, idx) => (
                       <Stack key={idx} direction="row" spacing={1.5} alignItems="flex-start">
-                        <CheckIcon sx={{ fontSize: 20, color: '#E31E24', mt: 0.2 }} />
+                        <CheckIcon sx={{ fontSize: 20, color: 'primary.main', mt: 0.2 }} />
                         <Typography variant="body2">{feature}</Typography>
                       </Stack>
                     ))}
@@ -159,11 +159,11 @@ export default function PricingSection() {
                     size="large"
                     onClick={() => handleGetConsultation(pkg.name)}
                     sx={{ 
-                      borderColor: '#E31E24',
-                      color: '#E31E24',
+                      borderColor: 'primary.main',
+                      color: 'primary.main',
                       '&:hover': {
-                        borderColor: '#B71C1C',
-                        background: 'rgba(227, 30, 36, 0.05)',
+                        borderColor: 'primary.dark',
+                        background: 'rgba(27, 143, 74, 0.05)',
                       },
                     }}
                   >

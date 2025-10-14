@@ -112,7 +112,7 @@ const SocialIconButton = styled(IconButton)({
   background: '#FFF8F0',
   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
   '&:hover': {
-    background: '#E31E24',
+    background: '#0D9F4F',
     color: '#FFFFFF',
     transform: 'scale(1.1)',
   },
@@ -233,19 +233,19 @@ export default function HeroSection() {
                 }}
               >
                 <ValuePropItem>
-                  <PublicOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#E31E24', flexShrink: 0 }} />
+                  <PublicOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#0D9F4F', flexShrink: 0 }} />
                   <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
                     Expert Digital<br />Marketing Team
                   </Typography>
                 </ValuePropItem>
                 <ValuePropItem>
-                  <PsychologyOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#E31E24', flexShrink: 0 }} />
+                  <PsychologyOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#0D9F4F', flexShrink: 0 }} />
                   <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
                     AI-Enhanced Content<br />& Campaign Management
                   </Typography>
                 </ValuePropItem>
                 <ValuePropItem>
-                  <TrendingUpOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#E31E24', flexShrink: 0 }} />
+                  <TrendingUpOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#0D9F4F', flexShrink: 0 }} />
                   <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
                     Results-Focused<br />Growth Strategies
                   </Typography>
@@ -319,7 +319,7 @@ export default function HeroSection() {
                     lineHeight: 1.4,
                   }}
                 >
-                  Get a FREE Digital Consultation with Akodefy in <Box component="span" sx={{ color: '#E31E24' }}>5 Minutes!</Box>
+                  Get a FREE Digital Consultation with Akodefy in <Box component="span" sx={{ color: '#0D9F4F' }}>5 Minutes!</Box>
                 </Typography>
 
                 <Stack spacing={{ xs: 2, md: 2.5 }}>

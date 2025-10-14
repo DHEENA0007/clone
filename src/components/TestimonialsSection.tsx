@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
   }, []);
 
   return (
-    <Box ref={sectionRef} sx={{ py: 12, background: '#FFFBF5', px: { xs: 2, sm: 4, md: 6 } }}>
+    <Box ref={sectionRef} sx={{ py: 12, background: 'background.default', px: { xs: 2, sm: 4, md: 6 } }}>
       <Typography variant="h2" align="center" sx={{ mb: 8 }}>
         Trusted by Industry Leaders
       </Typography>

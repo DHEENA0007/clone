@@ -84,7 +84,7 @@ export default function FAQSection() {
   }, []);
 
   return (
-    <Box ref={sectionRef} sx={{ py: { xs: 8, md: 12 }, background: '#FFFBF5' }}>
+    <Box ref={sectionRef} sx={{ py: { xs: 8, md: 12 }, background: 'background.default' }}>
       <Container maxWidth="md">
         <Typography variant="h2" align="center" sx={{ mb: { xs: 4, md: 6 } }}>
           Frequently Asked Questions (FAQs)
@@ -126,7 +126,7 @@ export default function FAQSection() {
             size="large"
             onClick={handleLetsTalk}
             sx={{ 
-              color: '#E31E24',
+              color: 'primary.main',
               fontWeight: 600,
             }}
           >

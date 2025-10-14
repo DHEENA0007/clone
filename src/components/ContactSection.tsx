@@ -5,7 +5,7 @@ import { sendEmail, type ContactFormData } from '../utils/emailService';
 
 const ContactContainer = styled(Box)({
   position: 'relative',
-  background: 'linear-gradient(135deg, rgba(15, 20, 25, 0.95) 0%, rgba(26, 26, 46, 0.95) 100%)',
+  background: 'linear-gradient(135deg, rgba(20, 112, 56, 0.95) 0%, rgba(47, 90, 140, 0.95) 100%)',
   color: '#FFFFFF',
   overflow: 'hidden',
   '&::before': {
@@ -15,10 +15,10 @@ const ContactContainer = styled(Box)({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundImage: 'url(https://images.unsplash.com/photo-1710020319182-3102611ed86b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwzfHxkaWdpdGFsJTIwbWFya2V0aW5nJTIwc29jaWFsJTIwbWVkaWElMjBhbmFseXRpY3MlMjBpbGx1c3RyYXRpb258ZW58MHwwfHxwdXJwbGV8MTc2MDAzMjc1MXww&ixlib=rb-4.1.0&q=85)',
+    backgroundImage: 'url(https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMGJ1c2luZXNzJTIwbWVldGluZ3xlbnwwfDB8fHwxNzYwMTg1MzkwfDA&ixlib=rb-4.1.0&q=85)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    opacity: 0.1,
+    opacity: 0.15,
     zIndex: 0,
   },
 });
@@ -44,7 +44,7 @@ export default function ContactSection() {
   return (
     <ContactContainer sx={{ py: 12 }}>
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
-        <Typography variant="overline" align="center" sx={{ display: 'block', mb: 2, color: '#E31E24', fontWeight: 700, letterSpacing: 2 }}>
+        <Typography variant="overline" align="center" sx={{ display: 'block', mb: 2, color: '#FFFFFF', fontWeight: 700, letterSpacing: 2 }}>
           📩 CONNECT WITH US
         </Typography>
         <Typography variant="h2" align="center" sx={{ mb: 3, color: '#FFFFFF' }}>
@@ -53,7 +53,7 @@ export default function ContactSection() {
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 4, md: 6 }} alignItems="flex-start">
           {/* Left - Description */}
           <Box sx={{ flex: 1 }}>
-            <Typography variant="overline" sx={{ color: '#E31E24', fontWeight: 700, letterSpacing: 2, mb: 2, display: 'block' }}>
+            <Typography variant="overline" sx={{ color: '#FFFFFF', fontWeight: 700, letterSpacing: 2, mb: 2, display: 'block' }}>
               📩 CONNECT WITH US
             </Typography>
             <Typography variant="h2" sx={{ mb: 3, color: '#FFFFFF', fontSize: { xs: '2rem', md: '2.5rem' } }}>
@@ -70,7 +70,7 @@ export default function ContactSection() {
 
           {/* Right - Form */}
           <Box sx={{ flex: 1, width: '100%' }}>
-            <Box sx={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)', borderRadius: '16px', p: { xs: 3, sm: 4 } }}>
+            <Box sx={{ background: 'rgba(255, 255, 255, 0.15)', backdropFilter: 'blur(20px)', borderRadius: '16px', p: { xs: 3, sm: 4 }, border: '1px solid rgba(255, 255, 255, 0.2)' }}>
               <Stack spacing={3}>
                 <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
                   <TextField
@@ -84,7 +84,7 @@ export default function ContactSection() {
                         color: '#FFFFFF',
                         '& fieldset': { borderColor: 'rgba(255, 255, 255, 0.3)' },
                         '&:hover fieldset': { borderColor: 'rgba(255, 255, 255, 0.5)' },
-                        '&.Mui-focused fieldset': { borderColor: '#E31E24' },
+                        '&.Mui-focused fieldset': { borderColor: 'var(--mui-palette-primary-main)' },
                       },
                     }}
                   />
@@ -100,7 +100,7 @@ export default function ContactSection() {
                         color: '#FFFFFF',
                         '& fieldset': { borderColor: 'rgba(255, 255, 255, 0.3)' },
                         '&:hover fieldset': { borderColor: 'rgba(255, 255, 255, 0.5)' },
-                        '&.Mui-focused fieldset': { borderColor: '#E31E24' },
+                        '&.Mui-focused fieldset': { borderColor: 'var(--mui-palette-primary-main)' },
                       },
                     }}
                   />
@@ -119,7 +119,7 @@ export default function ContactSection() {
                         color: '#FFFFFF',
                         '& fieldset': { borderColor: 'rgba(255, 255, 255, 0.3)' },
                         '&:hover fieldset': { borderColor: 'rgba(255, 255, 255, 0.5)' },
-                        '&.Mui-focused fieldset': { borderColor: '#E31E24' },
+                        '&.Mui-focused fieldset': { borderColor: 'var(--mui-palette-primary-main)' },
                       },
                     }}
                   />
@@ -134,7 +134,7 @@ export default function ContactSection() {
                         color: '#FFFFFF',
                         '& fieldset': { borderColor: 'rgba(255, 255, 255, 0.3)' },
                         '&:hover fieldset': { borderColor: 'rgba(255, 255, 255, 0.5)' },
-                        '&.Mui-focused fieldset': { borderColor: '#E31E24' },
+                        '&.Mui-focused fieldset': { borderColor: 'var(--mui-palette-primary-main)' },
                       },
                     }}
                   />
@@ -145,31 +145,31 @@ export default function ContactSection() {
                     <Stack spacing={1}>
                       <FormControlLabel
                         value="social"
-                        control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: '#E31E24' } }} />}
+                        control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: 'var(--mui-palette-primary-main)' } }} />}
                         label="Social Media Marketing"
                         sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
                       />
                       <FormControlLabel
                         value="seo"
-                        control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: '#E31E24' } }} />}
+                        control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: 'var(--mui-palette-primary-main)' } }} />}
                         label="SEO & Google Rankings"
                         sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
                       />
                       <FormControlLabel
                         value="paid"
-                        control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: '#E31E24' } }} />}
+                        control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: 'var(--mui-palette-primary-main)' } }} />}
                         label="Paid Advertising (Google, Meta, LinkedIn)"
                         sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
                       />
                       <FormControlLabel
                         value="website"
-                        control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: '#E31E24' } }} />}
+                        control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: 'var(--mui-palette-primary-main)' } }} />}
                         label="Website Development"
                         sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
                       />
                       <FormControlLabel
                         value="consulting"
-                        control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: '#E31E24' } }} />}
+                        control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: 'var(--mui-palette-primary-main)' } }} />}
                         label="Business Consulting"
                         sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
                       />
@@ -190,7 +190,7 @@ export default function ContactSection() {
                       color: '#FFFFFF',
                       '& fieldset': { borderColor: 'rgba(255, 255, 255, 0.3)' },
                       '&:hover fieldset': { borderColor: 'rgba(255, 255, 255, 0.5)' },
-                      '&.Mui-focused fieldset': { borderColor: '#E31E24' },
+                      '&.Mui-focused fieldset': { borderColor: 'var(--mui-palette-primary-main)' },
                     },
                   }}
                 />
@@ -204,7 +204,7 @@ export default function ContactSection() {
                     py: 2,
                     fontWeight: 700,
                     fontSize: '1.1rem',
-                    background: 'linear-gradient(135deg, #E31E24 0%, #B71C1C 100%)',
+                    background: 'linear-gradient(135deg, var(--mui-palette-primary-main) 0%, var(--mui-palette-primary-dark) 100%)',
                   }}
                 >
                   Ignite My Growth
