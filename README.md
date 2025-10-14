@@ -1,4 +1,4 @@
-# Puzzle Diplomats Website
+# Akodefy Website
 
 A modern, responsive digital marketing website built with React, TypeScript, and Material-UI.
 
@@ -24,8 +24,8 @@ A modern, responsive digital marketing website built with React, TypeScript, and
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/clone2.git
-cd clone2
+git clone https://github.com/yourusername/akodefy.git
+cd akodefy
 ```
 
 2. Install dependencies:
@@ -104,8 +104,8 @@ Once deployed on Vercel, your website will be available at your custom Vercel do
 ## 📞 Contact
 
 For any questions or support, please contact:
-- Email: puzzle@diplomats.co.in
-- Phone: +91 70948 58696
+- Email: akodefyinfotech@gmail.com
+- Phone: +91 90804 45315
 
 ## Expanding the ESLint configuration
 
