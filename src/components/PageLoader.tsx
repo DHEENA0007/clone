@@ -56,8 +56,8 @@ export default function PageLoader({ onComplete }: { onComplete: () => void }) {
         opacity: 0,
       },
       {
-        width: (i) => 60 + i * 40,
-        height: (i) => 60 + i * 40,
+        width: (i: number) => 60 + i * 40,
+        height: (i: number) => 60 + i * 40,
         opacity: 1,
         duration: 0.8,
         stagger: 0.2,

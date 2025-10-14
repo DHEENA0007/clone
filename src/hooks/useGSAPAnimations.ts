@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const useGSAPAnimations = () => {
   useEffect(() => {
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ScrollTrigger.getAll().forEach((trigger: ScrollTrigger) => trigger.kill());
     };
   }, []);
 };
