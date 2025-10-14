@@ -193,18 +193,20 @@ export default function HeroSection() {
             {/* Left Content */}
             <Box sx={{ flex: 1, maxWidth: { xs: '100%', lg: '650px' } }}>
               {/* Logo */}
-              <Box sx={{ mb: { xs: 3, md: 6 } }}>
+              <Box sx={{ mb: { xs: 3, md: 6 }, display: 'flex', justifyContent: 'center' }}>
                 <img 
                   src={companyLogo}
                   alt="Akodefy Logo"
                   style={{ 
                     height: 'auto', 
                     width: '100%',
-                    maxWidth: '280px',
-                    maxHeight: '120px',
+                    maxWidth: '4000px', // Increased from 280px
+                    maxHeight: '350px', // Increased from 120px
                     objectFit: 'contain',
                     mixBlendMode: 'multiply',
                     filter: 'contrast(1.1) brightness(1.05)',
+                    margin: '0 auto', // Center horizontally
+                    display: 'block',
                   }}
                 />
               </Box>

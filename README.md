@@ -7,14 +7,16 @@ A modern, responsive digital marketing website built with React, TypeScript, and
 - Modern responsive design
 - Material-UI components
 - TypeScript for type safety
+- GSAP animations
 - Vite for fast development
-- GitHub Pages deployment ready
+- Vercel deployment ready
 
 ## 🛠️ Technologies Used
 
 - React 19
 - TypeScript
 - Material-UI (MUI)
+- GSAP (GreenSock Animation Platform)
 - Vite
 - Emotion (CSS-in-JS)
 
@@ -36,40 +38,37 @@ npm install
 npm run dev
 ```
 
-## 🚀 Deployment to GitHub Pages
+## 🚀 Deployment to Vercel
 
-### Automatic Deployment (Recommended)
+This project is optimized for Vercel deployment with the following configuration:
 
-This project is configured with GitHub Actions for automatic deployment:
+### Quick Deploy
 
-1. **Update the homepage URL** in `package.json`:
-   ```json
-   "homepage": "https://yourusername.github.io/clone2/"
-   ```
+1. **Connect your repository to Vercel**:
+   - Go to [vercel.com](https://vercel.com)
+   - Import your GitHub repository
+   - Vercel will automatically detect it's a Vite project
 
-2. **Update the base path** in `vite.config.ts` if your repository name is different:
-   ```typescript
-   base: '/your-repo-name/'
-   ```
+2. **Automatic deployment**:
+   - Every push to the main branch will trigger a new deployment
+   - Pull requests will create preview deployments
 
-3. **Enable GitHub Pages** in your repository settings:
-   - Go to Settings → Pages
-   - Source: GitHub Actions
-   - The workflow will automatically deploy when you push to main branch
+### Manual Deploy with Vercel CLI
 
-### Manual Deployment
-
-If you prefer manual deployment:
-
-1. Install gh-pages:
+1. Install Vercel CLI:
 ```bash
-npm install --save-dev gh-pages
+npm i -g vercel
 ```
 
 2. Deploy:
 ```bash
-npm run deploy
+vercel --prod
 ```
+
+### Configuration Files
+
+- `vercel.json` - Vercel deployment configuration
+- `vite.config.ts` - Optimized for production builds
 
 ## 📁 Project Structure
 
@@ -77,6 +76,7 @@ npm run deploy
 src/
 ├── components/         # React components
 ├── assets/            # Static assets
+├── hooks/             # Custom React hooks
 ├── utils/             # Utility functions
 ├── theme.ts           # Material-UI theme
 ├── App.tsx            # Main App component
@@ -85,22 +85,21 @@ src/
 
 ## 🔧 Configuration Files
 
-- `vite.config.ts` - Vite configuration
+- `vite.config.ts` - Vite configuration optimized for production
+- `vercel.json` - Vercel deployment configuration
 - `tsconfig.json` - TypeScript configuration
-- `.github/workflows/deploy.yml` - GitHub Actions workflow
 
 ## 📝 Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
-- `npm run deploy` - Deploy to GitHub Pages
 - `npm run lint` - Run ESLint
+- `npm run type-check` - Type check without emitting files
 
 ## 🌐 Live Demo
 
-Once deployed, your website will be available at:
-`https://yourusername.github.io/clone2/`
+Once deployed on Vercel, your website will be available at your custom Vercel domain.
 
 ## 📞 Contact
 

@@ -32,13 +32,21 @@ export default function Footer() {
           sx={{ mb: 6 }}
         >
           {/* Logo & Tagline */}
-          <Box sx={{ flex: 1 }}>
+          <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <img 
               src={companyLogo}
               alt="Akodefy Logo"
-              style={{ height: '180px', width: 'auto', marginBottom: '16px', filter: 'brightness(0) invert(1)', maxWidth: '100%' }}
+              style={{ 
+                height: '270px', // Increased from 180px
+                width: 'auto', 
+                marginBottom: '16px', 
+                filter: 'brightness(0) invert(1)', 
+                maxWidth: '100%',
+                margin: '0 auto', // Center horizontally
+                display: 'block',
+              }}
             />
-            <Typography variant="body2" color="rgba(255, 255, 255, 0.7)">
+            <Typography variant="body2" color="rgba(255, 255, 255, 0.7)" sx={{ textAlign: 'center' }}>
               Driving business excellence through innovative digital solutions and strategic growth initiatives.
             </Typography>
           </Box>
