@@ -32,7 +32,7 @@ const IconCircle = styled(Box)(({ theme }) => ({
   width: 80,
   height: 80,
   borderRadius: '50%',
-  background: '#FFFFFF',
+  background: '#FFF8F0',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -95,13 +95,13 @@ export default function IndustriesSection() {
     <Box ref={sectionRef} sx={{ py: 12, background: '#D4C4B0' }}>
       <Container maxWidth="lg">
         <Typography variant="overline" align="center" sx={{ display: 'block', mb: 2, fontWeight: 700, letterSpacing: 2 }}>
-          OUR EXPERTISE
+          INDUSTRY SPECIALIZATION
         </Typography>
         <Typography variant="h2" align="center" sx={{ mb: 6 }}>
-          INDUSTRIES WE SERVE
+          SECTORS WE EMPOWER
         </Typography>
         <Typography variant="body1" align="center" color="text.secondary" sx={{ mb: 6, maxWidth: '800px', mx: 'auto' }}>
-          At Puzzle Diplomats, we cater to a wide range of industries — from e-commerce and healthcare to real estate, technology, and finance. Our digital, design, and development solutions are tailored to elevate your business and drive growth.
+          Akodefy brings deep industry expertise across multiple verticals — from e-commerce and healthcare to real estate, fintech, and SaaS. Our tailored digital solutions are engineered to unlock your competitive advantage and fuel sustainable growth.
         </Typography>
 
         <Box 

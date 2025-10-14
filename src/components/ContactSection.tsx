@@ -57,14 +57,14 @@ export default function ContactSection() {
               📩 CONNECT WITH US
             </Typography>
             <Typography variant="h2" sx={{ mb: 3, color: '#FFFFFF', fontSize: { xs: '2rem', md: '2.5rem' } }}>
-              Ready to Elevate Your Digital Presence?
+              Ready to Transform Your Digital Footprint?
             </Typography>
             <Typography variant="body1" sx={{ color: 'rgba(255, 255, 255, 0.8)', lineHeight: 1.8 }}>
-              At <strong>Puzzle Diplomats</strong>, we partner with forward-thinking brands to craft intelligent, immersive, and impactful digital strategies.
+              At <strong>Akodefy</strong>, we partner with visionary businesses to build powerful, data-driven digital ecosystems that deliver real impact.
               <br /><br />
-              Whether you're looking to scale your business, launch a high-converting website, dominate on social media, or break into global markets — we've got the expertise.
+              Whether you need to amplify your brand reach, develop a conversion-optimized website, establish social media dominance, or penetrate new markets — our expertise makes it happen.
               <br /><br />
-              Let's transform your vision into results. Fill out the form, and we'll be in touch.
+              Let's convert your ambitions into tangible outcomes. Complete the form below, and our team will reach out promptly.
             </Typography>
           </Box>
 

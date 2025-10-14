@@ -74,7 +74,7 @@ export default function ServicesSection() {
   }, []);
 
   return (
-    <Box ref={sectionRef} sx={{ py: 12, background: '#FFFFFF' }}>
+    <Box ref={sectionRef} sx={{ py: 12, background: '#FFFBF5' }}>
       <Container maxWidth="lg">
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 4, md: 6 }} alignItems="flex-start">
           {/* Left - Content */}
@@ -87,10 +87,10 @@ export default function ServicesSection() {
               />
             </Box>
             <Typography variant="h2" sx={{ mb: 3, fontWeight: 700 }}>
-              What We Do
+              Our Core Services
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ mb: 4, lineHeight: 1.8 }}>
-              At Puzzle Diplomats, we craft strategic digital solutions tailored for ambitious businesses. From market expansion to digital marketing, our bilingual team delivers results that matter—locally and globally.
+              At Akodefy, we engineer comprehensive digital strategies that drive measurable business outcomes. Our specialized team combines cutting-edge technology with proven marketing methodologies to deliver exceptional results across local and international markets.
             </Typography>
           </Box>
 

@@ -33,7 +33,7 @@ const packages = [
       'Facebook & Instagram',
       'Organic Promotion',
       'Paid Ads',
-      '14 Posters + 4 Reels',
+      '6 Posters + 3 Reels',
       'Monthly Meeting',
     ],
   },
@@ -106,10 +106,10 @@ export default function PricingSection() {
   }, []);
 
   return (
-    <Box ref={sectionRef} sx={{ py: 12, background: '#FAFAFA' }}>
+    <Box ref={sectionRef} sx={{ py: 12, background: '#FFF8F0' }}>
       <Container maxWidth="lg">
         <Typography variant="h2" align="center" sx={{ mb: 6 }}>
-          Find The Right Marketing Package For You Business.
+          Choose Your Perfect Growth Package
         </Typography>
 
         <Stack 

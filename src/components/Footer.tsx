@@ -35,11 +35,11 @@ export default function Footer() {
           <Box sx={{ flex: 1 }}>
             <img 
               src={companyLogo}
-              alt="Puzzle Diplomats Logo"
+              alt="Akodefy Logo"
               style={{ height: '180px', width: 'auto', marginBottom: '16px', filter: 'brightness(0) invert(1)', maxWidth: '100%' }}
             />
             <Typography variant="body2" color="rgba(255, 255, 255, 0.7)">
-              Empowering businesses through digital innovation and strategy.
+              Driving business excellence through innovative digital solutions and strategic growth initiatives.
             </Typography>
           </Box>
 
@@ -118,7 +118,7 @@ export default function Footer() {
           }}
         >
           <Typography variant="body2" color="rgba(255, 255, 255, 0.5)" sx={{ textAlign: { xs: 'center', sm: 'left' } }}>
-            © 2025 Puzzle Diplomats. All rights reserved.
+            © 2025 Akodefy. All rights reserved.
           </Typography>
         </Box>
       </Container>

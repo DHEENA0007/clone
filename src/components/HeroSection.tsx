@@ -20,7 +20,7 @@ const HeroContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   overflow: 'hidden',
-  background: '#F5F5F5',
+  background: '#FFFBF5',
   backgroundImage: `url(${heroBgImage})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
@@ -47,7 +47,7 @@ const HeroContainer = styled(Box)(({ theme }) => ({
 }));
 
 const ConsultationCard = styled(Box)<{ isVisible?: boolean }>(({ theme, isVisible }) => ({
-  background: '#FFFFFF',
+  background: '#FFF8F0',
   borderRadius: '20px',
   padding: theme.spacing(4),
   boxShadow: '0 30px 80px rgba(0, 0, 0, 0.2)',
@@ -109,7 +109,7 @@ const SocialSidebar = styled(Box)(({ theme }) => ({
 const SocialIconButton = styled(IconButton)({
   width: 40,
   height: 40,
-  background: '#FFFFFF',
+  background: '#FFF8F0',
   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
   '&:hover': {
     background: '#E31E24',
@@ -196,7 +196,7 @@ export default function HeroSection() {
               <Box sx={{ mb: { xs: 3, md: 6 } }}>
                 <img 
                   src={companyLogo}
-                  alt="Puzzle Diplomats Logo"
+                  alt="Akodefy Logo"
                   style={{ 
                     height: 'auto', 
                     width: '100%',
@@ -220,7 +220,7 @@ export default function HeroSection() {
                   letterSpacing: '-0.02em',
                 }}
               >
-                Empowering Businesses with Strategic Digital Growth
+                Accelerate Your Business Growth with Data-Driven Digital Solutions
               </Typography>
 
               {/* Value Props */}
@@ -235,19 +235,19 @@ export default function HeroSection() {
                 <ValuePropItem>
                   <PublicOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#E31E24', flexShrink: 0 }} />
                   <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
-                    Digital Marketing<br />Team
+                    Expert Digital<br />Marketing Team
                   </Typography>
                 </ValuePropItem>
                 <ValuePropItem>
                   <PsychologyOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#E31E24', flexShrink: 0 }} />
                   <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
-                    AI-Powered Content<br />& Paid Campaigns
+                    AI-Enhanced Content<br />& Campaign Management
                   </Typography>
                 </ValuePropItem>
                 <ValuePropItem>
                   <TrendingUpOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#E31E24', flexShrink: 0 }} />
                   <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
-                    Proven ROI-Driven<br />Strategies
+                    Results-Focused<br />Growth Strategies
                   </Typography>
                 </ValuePropItem>
               </Stack>
@@ -319,7 +319,7 @@ export default function HeroSection() {
                     lineHeight: 1.4,
                   }}
                 >
-                  Get a FREE Digital Consultation with Puzzle Diplomats in <Box component="span" sx={{ color: '#E31E24' }}>5 Minutes!</Box>
+                  Get a FREE Digital Consultation with Akodefy in <Box component="span" sx={{ color: '#E31E24' }}>5 Minutes!</Box>
                 </Typography>
 
                 <Stack spacing={{ xs: 2, md: 2.5 }}>
@@ -429,7 +429,7 @@ export default function HeroSection() {
                 <Box sx={{ mt: { xs: 2, md: 3 }, textAlign: 'center' }}>
                   <img 
                     src="https://alahmaradv.com/wp-content/uploads/2024/02/form-footer-white.webp"
-                    alt="Puzzle Diplomats - Trusted Partners"
+                    alt="Akodefy - Trusted Partners"
                     style={{ width: '100%', maxWidth: '300px', height: 'auto' }}
                   />
                 </Box>

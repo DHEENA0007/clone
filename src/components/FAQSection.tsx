@@ -17,28 +17,28 @@ const AnimatedAccordion = styled(Accordion)<{ isVisible?: boolean; delay?: numbe
 
 const faqs = [
   {
-    question: 'How do you tailor strategies for different industries?',
-    answer: 'We begin with a detailed industry and competitor analysis, then craft customized strategies using proven frameworks and data-driven insights tailored to your sector and audience.',
+    question: 'How do you customize strategies for different industries?',
+    answer: 'We conduct comprehensive industry research and competitive analysis to develop bespoke strategies. Our approach combines proven methodologies with data intelligence, ensuring solutions are perfectly aligned with your sector dynamics and target audience behavior.',
   },
   {
-    question: 'Do you provide AI-powered content creation?',
-    answer: 'Yes, our content team utilizes AI tools to optimize language, visuals, and timing, ensuring maximum engagement and alignment with current digital trends.',
+    question: 'Do you leverage AI in content creation?',
+    answer: 'Absolutely. Our creative team integrates advanced AI technologies to enhance content quality, optimize messaging, and perfect timing. This ensures peak engagement while staying ahead of evolving digital trends.',
   },
   {
-    question: 'Can you support international market entry?',
-    answer: 'Absolutely. We specialize in market expansion, including localization, compliance consulting, and go-to-market strategies for global reach.',
+    question: 'Can you facilitate international market expansion?',
+    answer: 'Yes, we excel in global market penetration. Our services encompass market research, cultural localization, regulatory compliance guidance, and comprehensive go-to-market execution for successful international launches.',
   },
   {
-    question: "What's included in your website development service?",
-    answer: 'Our website service includes UI/UX design, development, SEO setup, mobile responsiveness, security optimization, and integration of analytics and conversion tools.',
+    question: 'What does your website development package include?',
+    answer: 'Our comprehensive web development solution covers strategic UI/UX design, full-stack development, technical SEO implementation, mobile optimization, enterprise-grade security, and integration of advanced analytics and conversion tracking systems.',
   },
   {
-    question: 'Do you offer post-launch support?',
-    answer: 'Yes, we provide ongoing support for content updates, performance tracking, SEO adjustments, and strategy realignment based on KPIs and business goals.',
+    question: 'Is ongoing support available after launch?',
+    answer: 'Definitely. We provide continuous optimization support including content management, performance monitoring, SEO refinements, and strategic pivots based on real-time KPI analysis and evolving business objectives.',
   },
   {
-    question: 'What are your pricing models?',
-    answer: 'We offer flexible monthly packages based on the service category — social media, SEO, website development, or full-stack marketing. Custom packages are also available upon consultation.',
+    question: 'How is your pricing structured?',
+    answer: 'We offer scalable monthly subscription models tailored to specific service categories — social media management, SEO optimization, web development, or comprehensive digital marketing. Enterprise and custom packages are available through personalized consultation.',
   },
 ];
 
@@ -84,7 +84,7 @@ export default function FAQSection() {
   }, []);
 
   return (
-    <Box ref={sectionRef} sx={{ py: { xs: 8, md: 12 }, background: '#FFFFFF' }}>
+    <Box ref={sectionRef} sx={{ py: { xs: 8, md: 12 }, background: '#FFFBF5' }}>
       <Container maxWidth="md">
         <Typography variant="h2" align="center" sx={{ mb: { xs: 4, md: 6 } }}>
           Frequently Asked Questions (FAQs)

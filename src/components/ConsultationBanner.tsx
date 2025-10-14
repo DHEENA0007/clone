@@ -127,7 +127,7 @@ export default function ConsultationBanner() {
               textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
             }}
           >
-            Start Your Digital Growth Journey
+            Launch Your Digital Transformation
           </Typography>
           <Typography 
             variant="h3" 
@@ -142,7 +142,7 @@ export default function ConsultationBanner() {
               backgroundClip: 'text',
             }}
           >
-            with a FREE Consultation
+            with a Complimentary Strategy Session
           </Typography>
           <StyledButton
             variant="contained"
