@@ -17,28 +17,28 @@ const AnimatedAccordion = styled(Accordion)<{ isVisible?: boolean; delay?: numbe
 
 const faqs = [
   {
-    question: 'How do you customize strategies for different industries?',
-    answer: 'We conduct comprehensive industry research and competitive analysis to develop bespoke strategies. Our approach combines proven methodologies with data intelligence, ensuring solutions are perfectly aligned with your sector dynamics and target audience behavior.',
+    question: 'How do you customize IT solutions for different industries?',
+    answer: 'We conduct comprehensive technology assessments and industry analysis to develop tailored IT solutions. Our approach combines best practices with cutting-edge technologies, ensuring solutions are perfectly aligned with your business requirements and industry standards.',
   },
   {
-    question: 'Do you leverage AI in content creation?',
-    answer: 'Absolutely. Our creative team integrates advanced AI technologies to enhance content quality, optimize messaging, and perfect timing. This ensures peak engagement while staying ahead of evolving digital trends.',
+    question: 'Do you leverage AI in software development?',
+    answer: 'Absolutely. Our development team integrates advanced AI technologies and machine learning capabilities to enhance application functionality, automate processes, and deliver intelligent solutions that adapt to user needs and business growth.',
   },
   {
-    question: 'Can you facilitate international market expansion?',
-    answer: 'Yes, we excel in global market penetration. Our services encompass market research, cultural localization, regulatory compliance guidance, and comprehensive go-to-market execution for successful international launches.',
+    question: 'Can you facilitate cloud migration and deployment?',
+    answer: 'Yes, we excel in cloud transformation strategies. Our services encompass cloud architecture design, data migration, security implementation, compliance guidance, and comprehensive deployment for successful cloud adoption across AWS, Azure, and Google Cloud platforms.',
   },
   {
-    question: 'What does your website development package include?',
-    answer: 'Our comprehensive web development solution covers strategic UI/UX design, full-stack development, technical SEO implementation, mobile optimization, enterprise-grade security, and integration of advanced analytics and conversion tracking systems.',
+    question: 'What does your software development package include?',
+    answer: 'Our comprehensive software development solution covers requirements analysis, system architecture design, full-stack development, database optimization, API integration, security implementation, testing, deployment, and ongoing maintenance and support.',
   },
   {
-    question: 'Is ongoing support available after launch?',
-    answer: 'Definitely. We provide continuous optimization support including content management, performance monitoring, SEO refinements, and strategic pivots based on real-time KPI analysis and evolving business objectives.',
+    question: 'Is ongoing technical support available after deployment?',
+    answer: 'Definitely. We provide continuous technical support including system monitoring, performance optimization, security updates, bug fixes, feature enhancements, and strategic technology roadmap guidance based on evolving business needs.',
   },
   {
-    question: 'How is your pricing structured?',
-    answer: 'We offer scalable monthly subscription models tailored to specific service categories — social media management, SEO optimization, web development, or comprehensive digital marketing. Enterprise and custom packages are available through personalized consultation.',
+    question: 'How is your IT service pricing structured?',
+    answer: 'We offer flexible pricing models tailored to specific service categories — web development, mobile app development, cloud solutions, cybersecurity, or comprehensive IT consulting. Enterprise and custom packages are available through personalized consultation.',
   },
 ];
 

@@ -1,9 +1,9 @@
 import { Box, Typography, Stack, Container } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
-import CampaignOutlinedIcon from '@mui/icons-material/CampaignOutlined';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import AdsClickOutlinedIcon from '@mui/icons-material/AdsClickOutlined';
+import CloudOutlinedIcon from '@mui/icons-material/CloudOutlined';
+import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
+import SecurityOutlinedIcon from '@mui/icons-material/SecurityOutlined';
 import { useEffect, useRef, useState } from 'react';
 
 const ServiceCard = styled(Box)<{ isVisible?: boolean; delay?: number }>(({ theme, isVisible, delay }) => ({
@@ -21,23 +21,23 @@ const ServiceCard = styled(Box)<{ isVisible?: boolean; delay?: number }>(({ them
 const services = [
   {
     icon: CodeOutlinedIcon,
-    title: 'Website Development',
-    description: 'We build sleek, high-performance websites that support lead generation, e-commerce, and business growth—using responsive design and AI-powered UX.',
+    title: 'Web Development',
+    description: 'We build scalable, high-performance web applications using modern frameworks like React, Node.js, and cloud-native technologies for optimal user experience.',
   },
   {
-    icon: CampaignOutlinedIcon,
-    title: 'Social Media Marketing',
-    description: 'We run precise ad campaigns across Meta, TikTok, and LinkedIn to generate leads, grow traffic, and amplify your digital presence in key markets.',
+    icon: PhoneAndroidOutlinedIcon,
+    title: 'Mobile App Development',
+    description: 'We create native and cross-platform mobile applications for iOS and Android, delivering seamless user experiences and robust functionality.',
   },
   {
-    icon: SearchOutlinedIcon,
-    title: 'SEO Optimization',
-    description: 'We enhance your search visibility with keyword strategy, bilingual content, and technical SEO—driving long-term organic traffic and brand reach.',
+    icon: CloudOutlinedIcon,
+    title: 'Cloud Solutions',
+    description: 'We provide comprehensive cloud migration, deployment, and management services using AWS, Azure, and Google Cloud for enhanced scalability and performance.',
   },
   {
-    icon: AdsClickOutlinedIcon,
-    title: 'Google Advertising',
-    description: 'We manage and optimize Google Ads to attract quality leads, maximize conversions, and deliver measurable ROI with real-time performance tracking.',
+    icon: SecurityOutlinedIcon,
+    title: 'Cybersecurity Solutions',
+    description: 'We implement enterprise-grade security measures, vulnerability assessments, and compliance frameworks to protect your digital assets and data.',
   },
 ];
 
@@ -82,7 +82,7 @@ export default function ServicesSection() {
             <Box sx={{ mb: 4, display: { xs: 'none', md: 'block' } }}>
               <img 
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwbWFya2V0aW5nJTIwc3RyYXRlZ3klMjBjb2xsYWJvcmF0aW9uJTIwYnVzaW5lc3N8ZW58MHwwfHxyZWR8MTc2MDE4NTM5MHww&ixlib=rb-4.1.0&q=85"
-                alt="Professional business team collaborating on digital marketing strategy - Annie Spratt on Unsplash"
+                alt="Professional IT team collaborating on technology solutions and software development strategy"
                 style={{ width: '100%', height: 'auto', maxWidth: '400px', marginLeft: '-50px' }}
               />
             </Box>
@@ -90,7 +90,7 @@ export default function ServicesSection() {
               Our Core Services
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ mb: 4, lineHeight: 1.8 }}>
-              At Akodefy, we engineer comprehensive digital strategies that drive measurable business outcomes. Our specialized team combines cutting-edge technology with proven marketing methodologies to deliver exceptional results across local and international markets.
+              At Akodefy, we engineer comprehensive IT solutions that drive digital transformation and business innovation. Our specialized team combines cutting-edge technology with proven development methodologies to deliver exceptional results across diverse industries and markets.
             </Typography>
           </Box>
 

@@ -47,7 +47,7 @@ export default function Footer() {
               }}
             />
             <Typography variant="body2" color="rgba(255, 255, 255, 0.7)" sx={{ textAlign: 'center' }}>
-              Driving business excellence through innovative digital solutions and strategic growth initiatives.
+              Driving business innovation through cutting-edge IT solutions and strategic technology initiatives.
             </Typography>
           </Box>
 
@@ -57,11 +57,11 @@ export default function Footer() {
               Services
             </Typography>
             <Stack spacing={1.5}>
-              <FooterLink href="#">Business Consulting</FooterLink>
-              <FooterLink href="#">Social Media Marketing</FooterLink>
-              <FooterLink href="#">SEO & Google Rankings</FooterLink>
-              <FooterLink href="#">Website Development</FooterLink>
-              <FooterLink href="#">Paid Advertising</FooterLink>
+              <FooterLink href="#">IT Consulting & Strategy</FooterLink>
+              <FooterLink href="#">Web Development</FooterLink>
+              <FooterLink href="#">Mobile App Development</FooterLink>
+              <FooterLink href="#">Cloud Solutions & Migration</FooterLink>
+              <FooterLink href="#">Cybersecurity Solutions</FooterLink>
             </Stack>
           </Box>
 

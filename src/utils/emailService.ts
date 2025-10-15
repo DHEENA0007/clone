@@ -18,7 +18,7 @@ export const sendEmail = (formData: ContactFormData, buttonType: string) => {
   
   // Create personalized message based on button type from first person perspective
   if (buttonType.includes('Schedule')) {
-    body += `I would like to schedule a consultation session. I found your website and am interested in your digital marketing services.\n\n`;
+    body += `I would like to schedule a consultation session. I found your website and am interested in your IT solutions and technology services.\n\n`;
     body += `Request Type: ${buttonType}\n`;
   } else if (buttonType.includes('Consultation')) {
     body += `I am interested in getting a free consultation for your services. I came across your website and would like to learn more.\n\n`;

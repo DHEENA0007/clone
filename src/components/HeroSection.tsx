@@ -222,7 +222,7 @@ export default function HeroSection() {
                   letterSpacing: '-0.02em',
                 }}
               >
-                Accelerate Your Business Growth with Data-Driven Digital Solutions
+                Transform Your Business with Cutting-Edge IT Solutions & Technology
               </Typography>
 
               {/* Value Props */}
@@ -237,19 +237,19 @@ export default function HeroSection() {
                 <ValuePropItem>
                   <PublicOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#0D9F4F', flexShrink: 0 }} />
                   <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
-                    Expert Digital<br />Marketing Team
+                    Expert IT<br />Development Team
                   </Typography>
                 </ValuePropItem>
                 <ValuePropItem>
                   <PsychologyOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#0D9F4F', flexShrink: 0 }} />
                   <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
-                    AI-Enhanced Content<br />& Campaign Management
+                    AI-Enhanced Software<br />& System Architecture
                   </Typography>
                 </ValuePropItem>
                 <ValuePropItem>
                   <TrendingUpOutlinedIcon sx={{ fontSize: { xs: 48, sm: 64 }, color: '#0D9F4F', flexShrink: 0 }} />
                   <Typography variant="body1" fontWeight={600} sx={{ lineHeight: 1.4, fontSize: { xs: '0.95rem', sm: '1.05rem' } }}>
-                    Results-Focused<br />Growth Strategies
+                    Scalable Technology<br />Solutions & Support
                   </Typography>
                 </ValuePropItem>
               </Stack>
@@ -321,7 +321,7 @@ export default function HeroSection() {
                     lineHeight: 1.4,
                   }}
                 >
-                  Get a FREE Digital Consultation with Akodefy in <Box component="span" sx={{ color: '#0D9F4F' }}>5 Minutes!</Box>
+                  Get a FREE IT Strategy Consultation with Akodefy in <Box component="span" sx={{ color: '#0D9F4F' }}>5 Minutes!</Box>
                 </Typography>
 
                 <Stack spacing={{ xs: 2, md: 2.5 }}>
@@ -365,11 +365,11 @@ export default function HeroSection() {
                       label="Select a Service *"
                       onChange={(e) => handleInputChange('service', e.target.value)}
                     >
-                      <MenuItem value="social">Social Media Marketing</MenuItem>
-                      <MenuItem value="seo">SEO & Google Rankings</MenuItem>
-                      <MenuItem value="paid">Paid Advertising (Google, Meta, LinkedIn)</MenuItem>
-                      <MenuItem value="website">Website Development</MenuItem>
-                      <MenuItem value="consulting">Business Consulting</MenuItem>
+                      <MenuItem value="web-dev">Web Development</MenuItem>
+                      <MenuItem value="mobile-dev">Mobile App Development</MenuItem>
+                      <MenuItem value="software-dev">Custom Software Development</MenuItem>
+                      <MenuItem value="cloud">Cloud Solutions & Migration</MenuItem>
+                      <MenuItem value="it-consulting">IT Consulting & Strategy</MenuItem>
                     </Select>
                   </FormControl>
                   <FormControl fullWidth size="small">

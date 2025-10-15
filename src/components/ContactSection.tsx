@@ -48,7 +48,7 @@ export default function ContactSection() {
           📩 CONNECT WITH US
         </Typography>
         <Typography variant="h2" align="center" sx={{ mb: 3, color: '#FFFFFF' }}>
-          Ready to Elevate Your Digital Presence?
+          Ready to Transform Your Technology Infrastructure?
         </Typography>
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 4, md: 6 }} alignItems="flex-start">
           {/* Left - Description */}
@@ -57,14 +57,14 @@ export default function ContactSection() {
               📩 CONNECT WITH US
             </Typography>
             <Typography variant="h2" sx={{ mb: 3, color: '#FFFFFF', fontSize: { xs: '2rem', md: '2.5rem' } }}>
-              Ready to Transform Your Digital Footprint?
+              Ready to Modernize Your IT Systems?
             </Typography>
             <Typography variant="body1" sx={{ color: 'rgba(255, 255, 255, 0.8)', lineHeight: 1.8 }}>
-              At <strong>Akodefy</strong>, we partner with visionary businesses to build powerful, data-driven digital ecosystems that deliver real impact.
+              At <strong>Akodefy</strong>, we partner with forward-thinking businesses to build robust, scalable IT solutions that drive innovation and growth.
               <br /><br />
-              Whether you need to amplify your brand reach, develop a conversion-optimized website, establish social media dominance, or penetrate new markets — our expertise makes it happen.
+              Whether you need to develop custom software, migrate to the cloud, enhance cybersecurity, or build mobile applications — our expertise delivers results.
               <br /><br />
-              Let's convert your ambitions into tangible outcomes. Complete the form below, and our team will reach out promptly.
+              Let's transform your technology vision into reality. Complete the form below, and our team will reach out promptly.
             </Typography>
           </Box>
 
@@ -144,33 +144,33 @@ export default function ContactSection() {
                   <RadioGroup value={formData.service} onChange={(e) => handleInputChange('service', e.target.value)}>
                     <Stack spacing={1}>
                       <FormControlLabel
-                        value="social"
+                        value="web-dev"
                         control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: 'var(--mui-palette-primary-main)' } }} />}
-                        label="Social Media Marketing"
+                        label="Web Development"
                         sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
                       />
                       <FormControlLabel
-                        value="seo"
+                        value="mobile-dev"
                         control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: 'var(--mui-palette-primary-main)' } }} />}
-                        label="SEO & Google Rankings"
+                        label="Mobile App Development"
                         sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
                       />
                       <FormControlLabel
-                        value="paid"
+                        value="software-dev"
                         control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: 'var(--mui-palette-primary-main)' } }} />}
-                        label="Paid Advertising (Google, Meta, LinkedIn)"
+                        label="Custom Software Development"
                         sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
                       />
                       <FormControlLabel
-                        value="website"
+                        value="cloud"
                         control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: 'var(--mui-palette-primary-main)' } }} />}
-                        label="Website Development"
+                        label="Cloud Solutions & Migration"
                         sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
                       />
                       <FormControlLabel
-                        value="consulting"
+                        value="it-consulting"
                         control={<Radio sx={{ color: 'rgba(255, 255, 255, 0.7)', '&.Mui-checked': { color: 'var(--mui-palette-primary-main)' } }} />}
-                        label="Business Consulting"
+                        label="IT Consulting & Strategy"
                         sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
                       />
                     </Stack>
@@ -181,7 +181,7 @@ export default function ContactSection() {
                   fullWidth
                   multiline
                   rows={4}
-                  placeholder="Please share your goals, challenges, or ideas with us."
+                  placeholder="Please share your technology requirements, challenges, or project ideas with us."
                   variant="outlined"
                   value={formData.message}
                   onChange={(e) => handleInputChange('message', e.target.value)}
@@ -207,7 +207,7 @@ export default function ContactSection() {
                     background: 'linear-gradient(135deg, var(--mui-palette-primary-main) 0%, var(--mui-palette-primary-dark) 100%)',
                   }}
                 >
-                  Ignite My Growth
+                  Accelerate My IT Growth
                 </Button>
               </Stack>
             </Box>

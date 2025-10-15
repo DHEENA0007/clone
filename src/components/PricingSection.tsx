@@ -25,46 +25,49 @@ const PricingCard = styled(Card)<{ isVisible?: boolean; delay?: number }>(({ the
 
 const packages = [
   {
-    name: 'Social Media',
-    subtitle: 'Management and Advertising',
-    price: '18,000 INR',
-    period: '/ month',
-    features: [
-      'Facebook & Instagram',
-      'Organic Promotion',
-      'Paid Ads',
-      '6 Posters + 3 Reels',
-      'Monthly Meeting',
-    ],
-  },
-  {
-    name: 'Website',
-    subtitle: 'Development & Optimization',
+    name: 'Web Development',
+    subtitle: 'Professional Website Solutions',
     price: '45,000 INR',
     period: '',
     features: [
-      'Home, Services, About Us, Projects',
-      'Why Choose Us, Gallery, Contact Us',
-      'Social Media Integration',
-      'WhatsApp Integration',
-      'SEO Optimized Website',
-      'Google Ads Optimized',
+      'Responsive Web Design',
+      'React/Node.js Development',
+      'Database Integration',
+      'API Development',
+      'SEO Optimization',
+      'Mobile-First Design',
+      'Performance Optimization',
     ],
   },
   {
-    name: '360°',
-    subtitle: 'Digital Marketing',
-    price: '60,000 INR',
-    period: '/ month',
+    name: 'Mobile App',
+    subtitle: 'iOS & Android Development',
+    price: '85,000 INR',
+    period: '',
     features: [
-      'Social Media',
-      'Google Ads or SEO Optimization',
-      'Website Maintenance',
-      'LinkedIn Management',
-      'Google Mapping',
-      'WhatsApp Bulk Messaging',
-      'Monthly Meeting',
-      'Mail Campaign',
+      'Native iOS & Android Apps',
+      'Cross-Platform Development',
+      'API Integration',
+      'Push Notifications',
+      'App Store Deployment',
+      'User Authentication',
+      '3 Months Support',
+    ],
+  },
+  {
+    name: 'Full Stack Solution',
+    subtitle: 'Complete IT Package',
+    price: '1,25,000 INR',
+    period: '',
+    features: [
+      'Web + Mobile Application',
+      'Cloud Infrastructure Setup',
+      'Database Design & Management',
+      'CI/CD Pipeline',
+      'Security Implementation',
+      'Performance Monitoring',
+      '6 Months Support',
+      'Technical Documentation',
     ],
   },
 ];
@@ -109,7 +112,7 @@ export default function PricingSection() {
     <Box ref={sectionRef} sx={{ py: 12, background: 'grey.50' }}>
       <Container maxWidth="lg">
         <Typography variant="h2" align="center" sx={{ mb: 6 }}>
-          Choose Your Perfect Growth Package
+          Choose Your Perfect IT Solution Package
         </Typography>
 
         <Stack 
